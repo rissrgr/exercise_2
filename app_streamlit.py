@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 if os.path.isfile('.env'):
     load_dotenv()
-API_FLASK_CONVERT = "http://127.0.0.1:5000/convert" if os.getenv("API_FLASK_CONVERT") is None else os.getenv("API_FLASK_CONVERT")
+API_FLASK_CONVERT = "https://ed0c-103-82-14-56.ngrok-free.app/convert" if os.getenv("API_FLASK_CONVERT") is None else os.getenv("API_FLASK_CONVERT")
 
 st.title("Permainan Tebak Angka Ganjil atau Genap")
 
